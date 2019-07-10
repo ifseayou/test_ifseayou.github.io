@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Js,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="When your shyness falls on my shoulder...">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mute Memory">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="JS笔记1、JQuery1）、选择器选择器是jQuery的核心。一个选择器写出来类似$(&amp;#39;#dom-id&amp;#39;) ①、按照ID查找1var div = $(&apos;#abc&apos;);  ②、按照Class查找1var a = $(&apos;.red.green&apos;); // 所有节点包含`class=&quot;red 和 green&quot;`都将返回  ③、按照Tag查找12var ps = $(&apos;p&apos;); // 返回">
+<meta name="keywords" content="Js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSNotes">
+<meta property="og:url" content="http://yoursite.com/2019/07/05/JSNotes/index.html">
 <meta property="og:site_name" content="Mute Memory">
-<meta property="og:description" content="When your shyness falls on my shoulder...">
+<meta property="og:description" content="JS笔记1、JQuery1）、选择器选择器是jQuery的核心。一个选择器写出来类似$(&amp;#39;#dom-id&amp;#39;) ①、按照ID查找1var div = $(&apos;#abc&apos;);  ②、按照Class查找1var a = $(&apos;.red.green&apos;); // 所有节点包含`class=&quot;red 和 green&quot;`都将返回  ③、按照Tag查找12var ps = $(&apos;p&apos;); // 返回">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-09T12:54:14.237Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mute Memory">
-<meta name="twitter:description" content="When your shyness falls on my shoulder...">
+<meta name="twitter:title" content="JSNotes">
+<meta name="twitter:description" content="JS笔记1、JQuery1）、选择器选择器是jQuery的核心。一个选择器写出来类似$(&amp;#39;#dom-id&amp;#39;) ①、按照ID查找1var div = $(&apos;#abc&apos;);  ②、按照Class查找1var a = $(&apos;.red.green&apos;); // 所有节点包含`class=&quot;red 和 green&quot;`都将返回  ③、按照Tag查找12var ps = $(&apos;p&apos;); // 返回">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/05/JSNotes/">
 
 
 
 
 
-  <title>Mute Memory</title>
+  <title>JSNotes | Mute Memory</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,137 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/05/node-js/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="isea">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="http://i1.fuimg.com/692798/c68623b88d1b8871.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mute Memory">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/05/node-js/" itemprop="url">node.js</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-05T17:24:43+08:00">
-                2019-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h1><p>其实JS代码不仅仅可以运行在浏览器中，还能运行在服务器端。也就是在nodejs的环境下运行。</p>
-<p>Node第一次把JavaScript带入到后端服务器开发,JavaScript语言和V8引擎的开源Web服务器Node.js。</p>
-<h2 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h2><p>node package manager ；Node.js的包管理工具。</p>
-<p>在Node.js上开发时，会用到很多别人写的JavaScript代码，大家都把自己开发的模块打包后放到npm官网上，如果要使用，npm自动完成下载、安装等。npm已经在Node.js安装的时候顺带装好了。</p>
-<p><strong>例子</strong>：在安装好了nodejs之后，使用<code>vim</code> 来编辑一段：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello world..</span><br></pre></td></tr></table></figure>
-
-<p>保存为<code>hello.js</code> 然后使用 <code>node hello.js</code> 命令来运行这个文件。也可以使用 <code>node</code> 进入交互模式。</p>
-<h2 id="CommonJS规范"><a href="#CommonJS规范" class="headerlink" title="CommonJS规范"></a>CommonJS规范</h2><p>每个<code>.js</code>文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突。</p>
-<h2 id="基本模块"><a href="#基本模块" class="headerlink" title="基本模块"></a>基本模块</h2><h3 id="fs模块"><a href="#fs模块" class="headerlink" title="fs模块"></a>fs模块</h3>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -407,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/05/JSNotes/" itemprop="url">JSNotes</a></h1>
+          <h1 class="post-title" itemprop="name headline">JSNotes</h1>
         
 
         <div class="post-meta">
@@ -459,9 +330,7 @@
       
 
       
-        
-          
-            <h1 id="JS笔记"><a href="#JS笔记" class="headerlink" title="JS笔记"></a>JS笔记</h1><h2 id="1、JQuery"><a href="#1、JQuery" class="headerlink" title="1、JQuery"></a>1、JQuery</h2><h3 id="1）、选择器"><a href="#1）、选择器" class="headerlink" title="1）、选择器"></a>1）、选择器</h3><p>选择器是jQuery的核心。一个选择器写出来类似<code>$(&#39;#dom-id&#39;)</code></p>
+        <h1 id="JS笔记"><a href="#JS笔记" class="headerlink" title="JS笔记"></a>JS笔记</h1><h2 id="1、JQuery"><a href="#1、JQuery" class="headerlink" title="1、JQuery"></a>1、JQuery</h2><h3 id="1）、选择器"><a href="#1）、选择器" class="headerlink" title="1）、选择器"></a>1）、选择器</h3><p>选择器是jQuery的核心。一个选择器写出来类似<code>$(&#39;#dom-id&#39;)</code></p>
 <h4 id="①、按照ID查找"><a href="#①、按照ID查找" class="headerlink" title="①、按照ID查找"></a>①、按照ID查找</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = $(<span class="string">'#abc'</span>);</span><br></pre></td></tr></table></figure>
 
 <h4 id="②、按照Class查找"><a href="#②、按照Class查找" class="headerlink" title="②、按照Class查找"></a>②、按照Class查找</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = $(<span class="string">'.red.green'</span>); <span class="comment">// 所有节点包含`class="red 和 green"`都将返回</span></span><br></pre></td></tr></table></figure>
@@ -506,14 +375,20 @@
 </li>
 </ul>
 
-          
-        
       
     </div>
     
     
     
 
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/code1.jpg" alt="isea wechat" style="width: 200px; max-width: 100%;">
+    <div>mute memory</div>
+</div>
+
+      </div>
     
 
     
@@ -522,259 +397,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/05/Postgraduate/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="isea">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="http://i1.fuimg.com/692798/c68623b88d1b8871.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mute Memory">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/05/Postgraduate/" itemprop="url">Postgraduate</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-05T10:27:59+08:00">
-                2019-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Js/" rel="tag"># Js</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="宇哥"><a href="#宇哥" class="headerlink" title="宇哥"></a>宇哥</h1><ul>
-<li>千万不要怀疑自己的遗忘能力，你还记得当年刻骨铭心的爱么？</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/04/Hello-Mute-Memory/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="isea">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="http://i1.fuimg.com/692798/c68623b88d1b8871.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mute Memory">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/04/Hello-Mute-Memory/" itemprop="url">Hello Mute Memory</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-04T10:35:05+08:00">
-                2019-07-04
-              </time>
+              <a href="/2019/07/05/Postgraduate/" rel="next" title="Postgraduate">
+                <i class="fa fa-chevron-left"></i> Postgraduate
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2019/07/05/node-js/" rel="prev" title="node.js">
+                node.js <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h4 id="Welcome-to-Mute-Memory"><a href="#Welcome-to-Mute-Memory" class="headerlink" title="Welcome to Mute Memory!"></a>Welcome to Mute Memory!</h4><p> As a developer, I am willing to code a <code>Hello Mute Memory</code>  as a start.</p>
-<blockquote>
-<p>The future is far away and worth looking forward to …   By Mute Memory</p>
-</blockquote>
-<h5 id="From-now-on，I-will-code-and-write-something-that-what-I-think-and-want-to-say…"><a href="#From-now-on，I-will-code-and-write-something-that-what-I-think-and-want-to-say…" class="headerlink" title="From now on，I will code and write something that what I think and want to say…"></a>From now on，I will code and write something that what I think and want to say…</h5>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -784,10 +440,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -795,6 +452,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -815,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -906,6 +576,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JS笔记"><span class="nav-number">1.</span> <span class="nav-text">JS笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、JQuery"><span class="nav-number">1.1.</span> <span class="nav-text">1、JQuery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1）、选择器"><span class="nav-number">1.1.1.</span> <span class="nav-text">1）、选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#①、按照ID查找"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">①、按照ID查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#②、按照Class查找"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">②、按照Class查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#③、按照Tag查找"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">③、按照Tag查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#④、按照属性查找"><span class="nav-number">1.1.1.4.</span> <span class="nav-text">④、按照属性查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#⑤、层选择器"><span class="nav-number">1.1.1.5.</span> <span class="nav-text">⑤、层选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#⑥、子选择器"><span class="nav-number">1.1.1.6.</span> <span class="nav-text">⑥、子选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#⑦、过滤器"><span class="nav-number">1.1.1.7.</span> <span class="nav-text">⑦、过滤器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、AJAX"><span class="nav-number">1.2.</span> <span class="nav-text">2、AJAX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、MVVM"><span class="nav-number">1.3.</span> <span class="nav-text">3、MVVM</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1066,6 +752,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
